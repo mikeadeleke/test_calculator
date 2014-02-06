@@ -20,4 +20,9 @@ class CalculatorTest < Test::Unit::TestCase
     actual = @calculator.multiply(3, 3)
     assert_equal(9, actual)
   end
+
+  def test_can_divide
+    actual = @calculator.divide(12, 3)
+    assert_equal(4, actual)
+  end
 end
